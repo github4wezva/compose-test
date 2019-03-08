@@ -1,0 +1,14 @@
+version: "3"
+services:
+  httpdt:
+    image: michaelsrgundimi/test:third_volume
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+    ports:
+      - "80:80"
+
+
+
